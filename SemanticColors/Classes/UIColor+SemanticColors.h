@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  * In UIUserInterfaceStyleDark:  systemGray1 is slightly darker than systemGray.
  *                               systemGray2 is darker than that, and so on.
  */
-@property (class, nonatomic, readonly) UIColor *safeSystemGray2Color;//         API_UNAVAILABLE(tvos, watchos);
+@property (class, nonatomic, readonly) UIColor *safeSystemGray2Color         API_UNAVAILABLE(tvos, watchos);
 @property (class, nonatomic, readonly) UIColor *safeSystemGray3Color         API_UNAVAILABLE(tvos, watchos);
 @property (class, nonatomic, readonly) UIColor *safeSystemGray4Color         API_UNAVAILABLE(tvos, watchos);
 @property (class, nonatomic, readonly) UIColor *safeSystemGray5Color         API_UNAVAILABLE(tvos, watchos);
@@ -28,29 +28,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark Foreground colors
 
-///* Foreground colors for static text and related elements.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeLabelColor               API_UNAVAILABLE(watchos);
-//@property (class, nonatomic, readonly) UIColor *safeSecondaryLabelColor      API_UNAVAILABLE(watchos);
-//@property (class, nonatomic, readonly) UIColor *safeTertiaryLabelColor       API_UNAVAILABLE(watchos);
-//@property (class, nonatomic, readonly) UIColor *safeQuaternaryLabelColor     API_UNAVAILABLE(watchos);
-//
-///* Foreground color for standard system links.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeLinkColor                API_UNAVAILABLE(watchos);
-//
-///* Foreground color for placeholder text in controls or text fields or text views.
-// */
-//@property (class, nonatomic, readonly) UIColor *safePlaceholderTextColor     API_UNAVAILABLE(watchos);
-//
-///* Foreground colors for separators (thin border or divider lines).
-// * `separatorColor` may be partially transparent, so it can go on top of any content.
-// * `opaqueSeparatorColor` is intended to look similar, but is guaranteed to be opaque, so it will
-// * completely cover anything behind it. Depending on the situation, you may need one or the other.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeSeparatorColor           API_UNAVAILABLE(watchos);
-//@property (class, nonatomic, readonly) UIColor *safeOpaqueSeparatorColor     API_UNAVAILABLE(watchos);
-//
+/* Foreground colors for static text and related elements.
+ */
+@property (class, nonatomic, readonly) UIColor *safeLabelColor               API_UNAVAILABLE(watchos);
+@property (class, nonatomic, readonly) UIColor *safeSecondaryLabelColor      API_UNAVAILABLE(watchos);
+@property (class, nonatomic, readonly) UIColor *safeTertiaryLabelColor       API_UNAVAILABLE(watchos);
+@property (class, nonatomic, readonly) UIColor *safeQuaternaryLabelColor     API_UNAVAILABLE(watchos);
+
+/* Foreground color for standard system links.
+ */
+@property (class, nonatomic, readonly) UIColor *safeLinkColor                API_UNAVAILABLE(watchos);
+
+/* Foreground color for placeholder text in controls or text fields or text views.
+ */
+@property (class, nonatomic, readonly) UIColor *safePlaceholderTextColor     API_UNAVAILABLE(watchos);
+
+/* Foreground colors for separators (thin border or divider lines).
+ * `separatorColor` may be partially transparent, so it can go on top of any content.
+ * `opaqueSeparatorColor` is intended to look similar, but is guaranteed to be opaque, so it will
+ * completely cover anything behind it. Depending on the situation, you may need one or the other.
+ */
+@property (class, nonatomic, readonly) UIColor *safeSeparatorColor           API_UNAVAILABLE(watchos);
+@property (class, nonatomic, readonly) UIColor *safeOpaqueSeparatorColor     API_UNAVAILABLE(watchos);
+
 //#pragma mark Background colors
 //
 ///* We provide two design systems (also known as "stacks") for structuring an iOS app's backgrounds.

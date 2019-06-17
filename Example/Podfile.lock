@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SemanticColors: ce78052d5a7ef8290c040c94af147b28ec454bdd
+  SemanticColors: 3f7473ee6ba40b33c71b2b6df6f371abb67ef83a
 
 PODFILE CHECKSUM: 29e04026f0dbdc20661a29743fd16967e75538a6
 

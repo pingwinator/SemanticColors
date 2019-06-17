@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B9718959D3C079CBB8A4FD29CADA216 /* UIColor+SemanticColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA01B49E339B2699A043AEC4F3CD6C2 /* UIColor+SemanticColors.m */; };
-		36A3107227286432B3BD126F1041DFD1 /* SemanticColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 896BF714A94988218B5FCC4C391ABF37 /* SemanticColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4530378029B86C37C3666284EB6D217C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		5804F8AA889C760B5C7923BB4F919997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		181AAA72549EEB649E7569DD20220895 /* SemanticColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 896BF714A94988218B5FCC4C391ABF37 /* SemanticColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20A05EBF1A0D43DF31AF6CA5CA9DB44A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		45382B5CC83B0E31E14DF1D7A41CEDA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		5804F8AA889C760B5C7923BB4F919997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		6C3901D88B0734AD041B23BE22B3A58D /* Pods-SemanticColors_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02ED2E3CD53D2C5726C9BE901324DA21 /* Pods-SemanticColors_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7ED2A74DAC41F1F17D31381F7B57C652 /* Pods-SemanticColors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9F92151811080AF90956BF918491E15 /* Pods-SemanticColors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCC8864FE803160583BE7A1BAC425A75 /* UIColor+SemanticColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 377007455E10FB87D095290FFA6C1339 /* UIColor+SemanticColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9429F30EF39DD5E8A6CE46F508680BC7 /* UIColor+SemanticColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 377007455E10FB87D095290FFA6C1339 /* UIColor+SemanticColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C638F9DC40C58F3F04C4F1B81BB241A2 /* UIColor+SemanticColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA01B49E339B2699A043AEC4F3CD6C2 /* UIColor+SemanticColors.m */; };
 		D143F4D23768F1880A83D5C5BCD62BE0 /* Pods-SemanticColors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC276D71AB4D3213A7DB761F79599D1C /* Pods-SemanticColors_Tests-dummy.m */; };
 		D55AED166D1410A38F700014D79AF1E7 /* Pods-SemanticColors_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DBD2A4E83753937EF95DF34E946027 /* Pods-SemanticColors_Example-dummy.m */; };
-		DF221D44F4A913520168C4793558EAE1 /* SemanticColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52183CF8D7134B8C2478D8CF548E0A /* SemanticColors-dummy.m */; };
-		EF88C753CAC3EB15DBE0FD6D8F148BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D65F8D7892C371EDC73DBF1E11F229CD /* SemanticColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE52183CF8D7134B8C2478D8CF548E0A /* SemanticColors-dummy.m */; };
+		EF88C753CAC3EB15DBE0FD6D8F148BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +44,11 @@
 		03BA15D62AE4090FE9EEA23A1F811AAB /* Pods-SemanticColors_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SemanticColors_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1E85FA826AEC3FA1F8B295024BC505CE /* SemanticColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SemanticColors.framework; path = SemanticColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AFE29E01D0EABC330BC05A987BE970 /* SemanticColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SemanticColors.modulemap; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		34E21FFCEC37C5B3A5B9CDAE398D96D5 /* SemanticColors.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SemanticColors.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		377007455E10FB87D095290FFA6C1339 /* UIColor+SemanticColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SemanticColors.h"; path = "SemanticColors/Classes/UIColor+SemanticColors.h"; sourceTree = "<group>"; };
 		3E10CFF64F0172BE59C2D1F9D3BA4F4E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		51ACD873FECC83D045E9187A06CC92AC /* SemanticColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SemanticColors.xcconfig; sourceTree = "<group>"; };
 		56BA05B4E6C8026AAD57A18E4E419B17 /* Pods-SemanticColors_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SemanticColors_Example-Info.plist"; sourceTree = "<group>"; };
 		5AA01B49E339B2699A043AEC4F3CD6C2 /* UIColor+SemanticColors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SemanticColors.m"; path = "SemanticColors/Classes/UIColor+SemanticColors.m"; sourceTree = "<group>"; };
@@ -82,11 +84,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9EDEAA919EA62F71DC09D8DC865BF004 /* Frameworks */ = {
+		373FEE93A1A448652E5D84576E443504 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4530378029B86C37C3666284EB6D217C /* Foundation.framework in Frameworks */,
+				20A05EBF1A0D43DF31AF6CA5CA9DB44A /* Foundation.framework in Frameworks */,
+				45382B5CC83B0E31E14DF1D7A41CEDA3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +111,14 @@
 				4B3367E91765FED7966820D6B4572EAE /* Pods-SemanticColors_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		416F6030087612A41E9BA05738B42687 /* Pods-SemanticColors_Example */ = {
@@ -197,31 +208,24 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				49E45751F1ED5B39D3F9F4692404A4DA /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				A78067B84C6C7E79C4E0EA554EF3E01E /* Products */,
 				0D46E42143EC078653C018AEDBAE0562 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,12 +239,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		239DE44AA3E5D1A43C8C8A9C7170DD20 /* Headers */ = {
+		B7E1C7007C48022ABF27BE6E59EB1B91 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A3107227286432B3BD126F1041DFD1 /* SemanticColors-umbrella.h in Headers */,
-				BCC8864FE803160583BE7A1BAC425A75 /* UIColor+SemanticColors.h in Headers */,
+				181AAA72549EEB649E7569DD20220895 /* SemanticColors-umbrella.h in Headers */,
+				9429F30EF39DD5E8A6CE46F508680BC7 /* UIColor+SemanticColors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +261,12 @@
 /* Begin PBXNativeTarget section */
 		03DF0FC99A5D7BBD5843E54357BCF533 /* SemanticColors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F176D0EF21EB906D74734BBDC5DAFFFC /* Build configuration list for PBXNativeTarget "SemanticColors" */;
+			buildConfigurationList = D0BD47D3734280C9CBBE36D5C8F63A5B /* Build configuration list for PBXNativeTarget "SemanticColors" */;
 			buildPhases = (
-				239DE44AA3E5D1A43C8C8A9C7170DD20 /* Headers */,
-				DEBACC30E7257F44E461CBA7B655C612 /* Sources */,
-				9EDEAA919EA62F71DC09D8DC865BF004 /* Frameworks */,
-				77D86CB3500F65F6047C34D48D6EAC36 /* Resources */,
+				B7E1C7007C48022ABF27BE6E59EB1B91 /* Headers */,
+				76AD8664C7157856D1F4FCC1E6B3C177 /* Sources */,
+				373FEE93A1A448652E5D84576E443504 /* Frameworks */,
+				A8B09E97C4020FAA98BD2375EED3EF8F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -347,14 +351,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77D86CB3500F65F6047C34D48D6EAC36 /* Resources */ = {
+		A078E9F7EC3F3874A069312F5C2E20D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A078E9F7EC3F3874A069312F5C2E20D8 /* Resources */ = {
+		A8B09E97C4020FAA98BD2375EED3EF8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,20 +376,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76AD8664C7157856D1F4FCC1E6B3C177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65F8D7892C371EDC73DBF1E11F229CD /* SemanticColors-dummy.m in Sources */,
+				C638F9DC40C58F3F04C4F1B81BB241A2 /* UIColor+SemanticColors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8554DE11A957BC908ADED2937B34218 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D143F4D23768F1880A83D5C5BCD62BE0 /* Pods-SemanticColors_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DEBACC30E7257F44E461CBA7B655C612 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF221D44F4A913520168C4793558EAE1 /* SemanticColors-dummy.m in Sources */,
-				2B9718959D3C079CBB8A4FD29CADA216 /* UIColor+SemanticColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +539,67 @@
 			};
 			name = Release;
 		};
+		6C52FA98A253A604E3D0DD009C743E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51ACD873FECC83D045E9187A06CC92AC /* SemanticColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SemanticColors/SemanticColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SemanticColors/SemanticColors-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SemanticColors/SemanticColors.modulemap";
+				PRODUCT_MODULE_NAME = SemanticColors;
+				PRODUCT_NAME = SemanticColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		777721459F208BB0E944ED5E52F099A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51ACD873FECC83D045E9187A06CC92AC /* SemanticColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SemanticColors/SemanticColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SemanticColors/SemanticColors-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SemanticColors/SemanticColors.modulemap";
+				PRODUCT_MODULE_NAME = SemanticColors;
+				PRODUCT_NAME = SemanticColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -632,67 +697,6 @@
 			};
 			name = Debug;
 		};
-		ACF96A8FC1D486D38FDAAD6EE0FD0585 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51ACD873FECC83D045E9187A06CC92AC /* SemanticColors.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SemanticColors/SemanticColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SemanticColors/SemanticColors-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SemanticColors/SemanticColors.modulemap";
-				PRODUCT_MODULE_NAME = SemanticColors;
-				PRODUCT_NAME = SemanticColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D125981130B9AF85D37953E79D5CBFD0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51ACD873FECC83D045E9187A06CC92AC /* SemanticColors.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SemanticColors/SemanticColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SemanticColors/SemanticColors-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SemanticColors/SemanticColors.modulemap";
-				PRODUCT_MODULE_NAME = SemanticColors;
-				PRODUCT_NAME = SemanticColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D18AA09125F7DED523ADB2EFFD5305C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB4D61A4100B1E715946802F90CF3F9E /* Pods-SemanticColors_Example.debug.xcconfig */;
@@ -756,11 +760,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F176D0EF21EB906D74734BBDC5DAFFFC /* Build configuration list for PBXNativeTarget "SemanticColors" */ = {
+		D0BD47D3734280C9CBBE36D5C8F63A5B /* Build configuration list for PBXNativeTarget "SemanticColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D125981130B9AF85D37953E79D5CBFD0 /* Debug */,
-				ACF96A8FC1D486D38FDAAD6EE0FD0585 /* Release */,
+				777721459F208BB0E944ED5E52F099A3 /* Debug */,
+				6C52FA98A253A604E3D0DD009C743E2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
