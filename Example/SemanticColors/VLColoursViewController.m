@@ -107,7 +107,8 @@
     
     CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0;
     [color getRed:&red green:&green blue:&blue alpha:&alpha];
-    NSString *details = [NSString stringWithFormat:@"RGBA: %@ %@ %@ %@", @(red*255), @(green*255), @(blue*255), @(alpha)];
+    alpha = roundf(alpha * 100);
+    NSString *details = [NSString stringWithFormat:@"RGBA: %@ %@ %@ %@%%", @(roundf(red*255)), @(roundf(green*255)), @(roundf(blue*255)), @(alpha)];
     cell.details.text = details;
     
     return cell;
