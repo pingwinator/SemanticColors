@@ -80,34 +80,31 @@ NS_ASSUME_NONNULL_BEGIN
 @property (class, nonatomic, readonly) UIColor *safeSecondarySystemGroupedBackgroundColor    API_UNAVAILABLE(tvos, watchos);
 @property (class, nonatomic, readonly) UIColor *safeTertiarySystemGroupedBackgroundColor     API_UNAVAILABLE(tvos, watchos);
 
-//#pragma mark Fill colors
-//
-///* Fill colors for UI elements.
-// * These are meant to be used over the background colors, since their alpha component is less than 1.
-// *
-// * systemFillColor is appropriate for filling thin and small shapes.
-// * Example: The track of a slider.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeSystemFillColor                          API_UNAVAILABLE(tvos, watchos);
-//
-///* secondarySystemFillColor is appropriate for filling medium-size shapes.
-// * Example: The background of a switch.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeSecondarySystemFillColor                 API_UNAVAILABLE(tvos, watchos);
-//
-///* tertiarySystemFillColor is appropriate for filling large shapes.
-// * Examples: Input fields, search bars, buttons.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeTertiarySystemFillColor                  API_UNAVAILABLE(tvos, watchos);
-//
-///* quaternarySystemFillColor is appropriate for filling large areas containing complex content.
-// * Example: Expanded table cells.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeQuaternarySystemFillColor                API_UNAVAILABLE(tvos, watchos);
-//
-///* groupTableViewBackgroundColor is now the same as systemGroupedBackgroundColor.
-// */
-////@property(class, nonatomic, readonly) UIColor *safeGroupTableViewBackgroundColor API_DEPRECATED_WITH_REPLACEMENT("systemGroupedBackgroundColor", ios(2.0, 13.0), tvos(13.0, 13.0));
+#pragma mark Fill colors
+
+/* Fill colors for UI elements.
+ * These are meant to be used over the background colors, since their alpha component is less than 1.
+ *
+ * systemFillColor is appropriate for filling thin and small shapes.
+ * Example: The track of a slider.
+ */
+@property (class, nonatomic, readonly) UIColor *safeSystemFillColor                          API_UNAVAILABLE(tvos, watchos);
+
+/* secondarySystemFillColor is appropriate for filling medium-size shapes.
+ * Example: The background of a switch.
+ */
+@property (class, nonatomic, readonly) UIColor *safeSecondarySystemFillColor                 API_UNAVAILABLE(tvos, watchos);
+
+/* tertiarySystemFillColor is appropriate for filling large shapes.
+ * Examples: Input fields, search bars, buttons.
+ */
+@property (class, nonatomic, readonly) UIColor *safeTertiarySystemFillColor                  API_UNAVAILABLE(tvos, watchos);
+
+/* quaternarySystemFillColor is appropriate for filling large areas containing complex content.
+ * Example: Expanded table cells.
+ */
+@property (class, nonatomic, readonly) UIColor *safeQuaternarySystemFillColor                API_UNAVAILABLE(tvos, watchos);
+
 @end
 
 NS_ASSUME_NONNULL_END

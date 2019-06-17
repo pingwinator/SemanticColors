@@ -275,13 +275,71 @@
     } else {
 #endif
         // Fallback on earlier versions
-        return [UIColor colorWithRed:0.94902f green:0.94902f blue:0.968627f alpha:1];;
+        return [UIColor colorWithRed:0.94902f green:0.94902f blue:0.968627f alpha:1];
 #ifdef __IPHONE_13_0
     }
 #endif
 }
 
+#pragma mark Fill colors
+
++ (UIColor *)safeSystemFillColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.systemFillColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithRed:0.470588f green:0.470588f blue:0.501961f alpha:0.2f];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
++ (UIColor *)safeSecondarySystemFillColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.secondarySystemFillColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithRed:0.470588f green:0.470588f blue:0.501961f alpha:0.16f];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
++ (UIColor *)safeTertiarySystemFillColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.tertiarySystemFillColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithRed:0.462745f green:0.462745f blue:0.501961f alpha:0.12f];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
++ (UIColor *)safeQuaternarySystemFillColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.quaternarySystemFillColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithRed:0.454902f green:0.454902f blue:0.501961f alpha:0.08f];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
 
 @end
+
 
 
