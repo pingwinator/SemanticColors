@@ -1,0 +1,16 @@
+PODS:
+  - SemanticColors (0.1.0)
+
+DEPENDENCIES:
+  - SemanticColors (from `../`)
+
+EXTERNAL SOURCES:
+  SemanticColors:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SemanticColors: ce78052d5a7ef8290c040c94af147b28ec454bdd
+
+PODFILE CHECKSUM: 29e04026f0dbdc20661a29743fd16967e75538a6
+
+COCOAPODS: 1.7.1

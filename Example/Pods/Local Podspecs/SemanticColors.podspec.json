@@ -1,0 +1,22 @@
+{
+  "name": "SemanticColors",
+  "version": "0.1.0",
+  "summary": "A short description of SemanticColors.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pingwinator/SemanticColors",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Vasyl Liutikov": "pingwinator@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/pingwinator/SemanticColors.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SemanticColors/Classes/**/*"
+}

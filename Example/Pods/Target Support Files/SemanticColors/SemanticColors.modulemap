@@ -1,0 +1,6 @@
+framework module SemanticColors {
+  umbrella header "SemanticColors-umbrella.h"
+
+  export *
+  module * { export * }
+}
