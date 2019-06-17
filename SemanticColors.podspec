@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SemanticColors'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SemanticColors.'
+  s.summary          = 'iOS 13 Dynamic colors backport for old ios system.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Are you working on dark mode for ios? This year Apple prepared nice dynamic system colors, but this api available only for ios13+. This is a port, that you could with older ios. Interested? just try our demo project 
                        DESC
 
   s.homepage         = 'https://github.com/pingwinator/SemanticColors'
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Vasyl Liutikov' => 'pingwinator@gmail.com' }
   s.source           = { :git => 'https://github.com/pingwinator/SemanticColors.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/pingwinator'
 
   s.ios.deployment_target = '8.0'
 

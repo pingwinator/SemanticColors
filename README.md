@@ -1,6 +1,7 @@
 # SemanticColors
+Are you working on dark mode for ios? This year Apple prepared nice dynamic system colors, but this api available only for ios13+. This is a port, that you could with older ios. Interested? just try our demo project 
 
-[![CI Status](https://img.shields.io/travis/Vasyl Liutikov/SemanticColors.svg?style=flat)](https://travis-ci.org/Vasyl Liutikov/SemanticColors)
+[![CI Status](https://img.shields.io/travis/pingwinatoe/SemanticColors.svg?style=flat)](https://travis-ci.org/pingwinator/SemanticColors)
 [![Version](https://img.shields.io/cocoapods/v/SemanticColors.svg?style=flat)](https://cocoapods.org/pods/SemanticColors)
 [![License](https://img.shields.io/cocoapods/l/SemanticColors.svg?style=flat)](https://cocoapods.org/pods/SemanticColors)
 [![Platform](https://img.shields.io/cocoapods/p/SemanticColors.svg?style=flat)](https://cocoapods.org/pods/SemanticColors)
