@@ -10,10 +10,11 @@
 #import "UIColor+SemanticColors.h"
 #import "VLColorViewCell.h"
 #import "VLBorderView.h"
+#import "VLColor.h"
+#import "VLColorGroup.h"
 
 @interface VLColoursViewController ()
-@property (nonatomic, strong) NSDictionary <NSString*, UIColor*>*colors;
-@property (nonatomic, strong) NSArray <NSString*> *colorsKeys;
+@property (nonatomic, strong) NSArray <VLColorGroup*> *colors;
 @end
 
 @implementation VLColoursViewController
@@ -28,36 +29,42 @@
 
 - (void)setupColours
 {
-    self.colors = @{
-                    //Gray
-                    @"safeSystemGray2Color": UIColor.safeSystemGray2Color,
-                    @"safeSystemGray3Color": UIColor.safeSystemGray3Color,
-                    @"safeSystemGray4Color": UIColor.safeSystemGray4Color,
-                    @"safeSystemGray5Color": UIColor.safeSystemGray5Color,
-                    @"safeSystemGray6Color": UIColor.safeSystemGray6Color,
-                    //Foreground
-                    @"safeLabelColor": UIColor.safeLabelColor,
-                    @"safeSecondaryLabelColor": UIColor.safeSecondaryLabelColor,
-                    @"safeTertiaryLabelColor": UIColor.safeTertiaryLabelColor,
-                    @"safeQuaternaryLabelColor": UIColor.safeQuaternaryLabelColor,
-                    @"safeLinkColor": UIColor.safeLinkColor,
-                    @"safePlaceholderTextColor": UIColor.safePlaceholderTextColor,
-                    @"safeSeparatorColor": UIColor.safeSeparatorColor,
-                    @"safeOpaqueSeparatorColor": UIColor.safeOpaqueSeparatorColor,
-                    //Background
-                    @"safeSystemBackgroundColor": UIColor.safeSystemBackgroundColor,
-                    @"safeSecondarySystemBackgroundColor": UIColor.safeSecondarySystemBackgroundColor,
-                    @"safeTertiarySystemBackgroundColor": UIColor.safeTertiarySystemBackgroundColor,
-                    @"safeSystemGroupedBackgroundColor": UIColor.safeSystemGroupedBackgroundColor,
-                    @"safeSecondarySystemGroupedBackgroundColor": UIColor.safeSecondarySystemGroupedBackgroundColor,
-                    @"safeTertiarySystemGroupedBackgroundColor": UIColor.safeTertiarySystemGroupedBackgroundColor,
-                    //Fill
-                    @"safeSystemFillColor": UIColor.safeSystemFillColor,
-                    @"safeSecondarySystemFillColor": UIColor.safeSecondarySystemFillColor,
-                    @"safeTertiarySystemFillColor": UIColor.safeTertiarySystemFillColor,
-                    @"safeQuaternarySystemFillColor": UIColor.safeQuaternarySystemFillColor,
-                    };
-    self.colorsKeys = self.colors.allKeys;
+    VLColorGroup *greyGroup = [VLColorGroup groupWithName:@"Grey" colors:@[
+                                                                           [VLColor colorWithName:@"safeSystemGray2Color" color:UIColor.safeSystemGray2Color],
+                                                                           [VLColor colorWithName:@"safeSystemGray3Color" color:UIColor.safeSystemGray3Color],
+                                                                           [VLColor colorWithName:@"safeSystemGray4Color" color:UIColor.safeSystemGray4Color],
+                                                                           [VLColor colorWithName:@"safeSystemGray5Color" color:UIColor.safeSystemGray5Color],
+                                                                           [VLColor colorWithName:@"safeSystemGray6Color" color:UIColor.safeSystemGray6Color],
+                                                                           ]
+                               ];
+    VLColorGroup *foregroundGroup = [VLColorGroup groupWithName:@"Foreground" colors:@[
+                                                                           [VLColor colorWithName:@"safeLabelColor" color:UIColor.safeLabelColor],
+                                                                           [VLColor colorWithName:@"safeSecondaryLabelColor" color:UIColor.safeSecondaryLabelColor],
+                                                                           [VLColor colorWithName:@"safeTertiaryLabelColor" color:UIColor.safeTertiaryLabelColor],
+                                                                           [VLColor colorWithName:@"safeQuaternaryLabelColor" color:UIColor.safeQuaternaryLabelColor],
+                                                                           [VLColor colorWithName:@"safeLinkColor" color:UIColor.safeLinkColor],
+                                                                           [VLColor colorWithName:@"safePlaceholderTextColor" color:UIColor.safePlaceholderTextColor],
+                                                                           [VLColor colorWithName:@"safeSeparatorColor" color:UIColor.safeSeparatorColor],
+                                                                           [VLColor colorWithName:@"safeOpaqueSeparatorColor" color:UIColor.safeOpaqueSeparatorColor],
+                                                                           ]
+                               ];
+    VLColorGroup *backgroundGroup = [VLColorGroup groupWithName:@"Background" colors:@[
+                                                                           [VLColor colorWithName:@"safeSystemBackgroundColor" color:UIColor.safeSystemBackgroundColor],
+                                                                           [VLColor colorWithName:@"safeSecondarySystemBackgroundColor" color:UIColor.safeSecondarySystemBackgroundColor],
+                                                                           [VLColor colorWithName:@"safeTertiarySystemBackgroundColor" color:UIColor.safeTertiarySystemBackgroundColor],
+                                                                           [VLColor colorWithName:@"safeSystemGroupedBackgroundColor" color:UIColor.safeSystemGroupedBackgroundColor],
+                                                                           [VLColor colorWithName:@"safeSecondarySystemGroupedBackgroundColor" color:UIColor.safeSecondarySystemGroupedBackgroundColor],
+                                                                           [VLColor colorWithName:@"safeTertiarySystemGroupedBackgroundColor" color:UIColor.safeTertiarySystemGroupedBackgroundColor],
+                                                                           ]
+                               ];
+    VLColorGroup *fillGroup = [VLColorGroup groupWithName:@"Fill" colors:@[
+                                                                           [VLColor colorWithName:@"safeSystemFillColor" color:UIColor.safeSystemFillColor],
+                                                                           [VLColor colorWithName:@"safeSecondarySystemFillColor" color:UIColor.safeSecondarySystemFillColor],
+                                                                           [VLColor colorWithName:@"safeTertiarySystemFillColor" color:UIColor.safeTertiarySystemFillColor],
+                                                                           [VLColor colorWithName:@"safeQuaternarySystemFillColor" color:UIColor.safeQuaternarySystemFillColor]
+                                                                           ]
+                               ];
+    self.colors = @[greyGroup, foregroundGroup, backgroundGroup, fillGroup];
     [self.tableView reloadData];
 }
 
@@ -75,19 +82,25 @@
 
 #pragma mark - Table view data source
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return self.colors[section].name;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return self.colors.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.colorsKeys.count;
+    return self.colors[section].colors.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     VLColorViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VLColorViewCell" forIndexPath:indexPath];
-    NSString *key = self.colorsKeys[indexPath.row];
-    UIColor *color = self.colors[key];
+    VLColor *vlcolor = self.colors[indexPath.section].colors[indexPath.row];
+    NSString *key = vlcolor.name;
+    UIColor *color = vlcolor.color;
     
     cell.title.text = key;
     cell.colorView.backgroundColor = color;

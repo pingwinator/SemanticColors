@@ -27,6 +27,8 @@
 		FD0A099922B7AFCA003EF244 /* VLColoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A099822B7AFCA003EF244 /* VLColoursViewController.m */; };
 		FD0A099C22B7B047003EF244 /* VLColorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A099B22B7B047003EF244 /* VLColorViewCell.m */; };
 		FD0A099F22B7B528003EF244 /* VLBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A099E22B7B528003EF244 /* VLBorderView.m */; };
+		FD0A09A222B7BACF003EF244 /* VLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A09A122B7BACF003EF244 /* VLColor.m */; };
+		FD0A09A522B7BAE7003EF244 /* VLColorGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A09A422B7BAE7003EF244 /* VLColorGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,10 @@
 		FD0A099B22B7B047003EF244 /* VLColorViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLColorViewCell.m; sourceTree = "<group>"; };
 		FD0A099D22B7B528003EF244 /* VLBorderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLBorderView.h; sourceTree = "<group>"; };
 		FD0A099E22B7B528003EF244 /* VLBorderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLBorderView.m; sourceTree = "<group>"; };
+		FD0A09A022B7BACF003EF244 /* VLColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLColor.h; sourceTree = "<group>"; };
+		FD0A09A122B7BACF003EF244 /* VLColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLColor.m; sourceTree = "<group>"; };
+		FD0A09A322B7BAE7003EF244 /* VLColorGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLColorGroup.h; sourceTree = "<group>"; };
+		FD0A09A422B7BAE7003EF244 /* VLColorGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLColorGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,10 @@
 				FD0A099B22B7B047003EF244 /* VLColorViewCell.m */,
 				FD0A099D22B7B528003EF244 /* VLBorderView.h */,
 				FD0A099E22B7B528003EF244 /* VLBorderView.m */,
+				FD0A09A022B7BACF003EF244 /* VLColor.h */,
+				FD0A09A122B7BACF003EF244 /* VLColor.m */,
+				FD0A09A322B7BAE7003EF244 /* VLColorGroup.h */,
+				FD0A09A422B7BAE7003EF244 /* VLColorGroup.m */,
 			);
 			name = "Example for SemanticColors";
 			path = SemanticColors;
@@ -382,12 +392,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0A09A222B7BACF003EF244 /* VLColor.m in Sources */,
 				FD0A099C22B7B047003EF244 /* VLColorViewCell.m in Sources */,
 				FD0A099922B7AFCA003EF244 /* VLColoursViewController.m in Sources */,
 				6003F59E195388D20070C39A /* VLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* VLViewController.m in Sources */,
 				FD0A099F22B7B528003EF244 /* VLBorderView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				FD0A09A522B7BAE7003EF244 /* VLColorGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
