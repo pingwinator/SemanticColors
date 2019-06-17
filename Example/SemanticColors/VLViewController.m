@@ -28,9 +28,15 @@
 //                                                  @"safeTertiaryLabelColor": UIColor.safeTertiaryLabelColor,
 //                                                  @"safeQuaternaryLabelColor": UIColor.safeQuaternaryLabelColor,
 //                                                  @"safeLinkColor": UIColor.safeLinkColor,
-                                                  @"safePlaceholderTextColor": UIColor.safePlaceholderTextColor,
-                                                   @"safeSeparatorColor": UIColor.safeSeparatorColor,
-                                                   @"safeOpaqueSeparatorColor": UIColor.safeOpaqueSeparatorColor,
+//                                                  @"safePlaceholderTextColor": UIColor.safePlaceholderTextColor,
+//                                                   @"safeSeparatorColor": UIColor.safeSeparatorColor,
+//                                                   @"safeOpaqueSeparatorColor": UIColor.safeOpaqueSeparatorColor,
+                                                  @"safeSystemBackgroundColor": UIColor.safeSystemBackgroundColor,
+                                                  @"safeSecondarySystemBackgroundColor": UIColor.safeSecondarySystemBackgroundColor,
+                                                  @"safeTertiarySystemBackgroundColor": UIColor.safeTertiarySystemBackgroundColor,
+                                                  @"safeSystemGroupedBackgroundColor": UIColor.safeSystemGroupedBackgroundColor,
+                                                  @"safeSecondarySystemGroupedBackgroundColor": UIColor.safeSecondarySystemGroupedBackgroundColor,
+                                                  @"safeTertiarySystemGroupedBackgroundColor": UIColor.safeTertiarySystemGroupedBackgroundColor,
                                                   };
     for (NSString *key in [colors.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)]) {
         if (@available(iOS 13.0, *)) {

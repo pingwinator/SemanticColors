@@ -195,5 +195,93 @@
 #endif
 }
 
+#pragma mark Background colors
+
++ (UIColor *)safeSystemBackgroundColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.systemBackgroundColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithWhite:1.f alpha:1.f];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
++ (UIColor *)safeSecondarySystemBackgroundColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.secondarySystemBackgroundColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithRed:0.94902f green:0.94902f blue:0.968627f alpha:1];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
++ (UIColor *)safeTertiarySystemBackgroundColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.tertiarySystemBackgroundColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithWhite:1.f alpha:1];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
++ (UIColor *)safeSystemGroupedBackgroundColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.systemGroupedBackgroundColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithRed:0.94902f green:0.94902f blue:0.968627f alpha:1];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
++ (UIColor *)safeSecondarySystemGroupedBackgroundColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.secondarySystemGroupedBackgroundColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithWhite:1.f alpha:1.f];
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
++ (UIColor *)safeTertiarySystemGroupedBackgroundColor
+{
+#ifdef __IPHONE_13_0
+    if (@available(iOS 13.0, *)) {
+        return UIColor.tertiarySystemGroupedBackgroundColor;
+    } else {
+#endif
+        // Fallback on earlier versions
+        return [UIColor colorWithRed:0.94902f green:0.94902f blue:0.968627f alpha:1];;
+#ifdef __IPHONE_13_0
+    }
+#endif
+}
+
+
 @end
+
 

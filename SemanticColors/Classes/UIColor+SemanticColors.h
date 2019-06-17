@@ -51,35 +51,35 @@ NS_ASSUME_NONNULL_BEGIN
 @property (class, nonatomic, readonly) UIColor *safeSeparatorColor           API_UNAVAILABLE(watchos);
 @property (class, nonatomic, readonly) UIColor *safeOpaqueSeparatorColor     API_UNAVAILABLE(watchos);
 
-//#pragma mark Background colors
-//
-///* We provide two design systems (also known as "stacks") for structuring an iOS app's backgrounds.
-// *
-// * Each stack has three "levels" of background colors. The first color is intended to be the
-// * main background, farthest back. Secondary and tertiary colors are layered on top
-// * of the main background, when appropriate.
-// *
-// * Inside of a discrete piece of UI, choose a stack, then use colors from that stack.
-// * We do not recommend mixing and matching background colors between stacks.
-// * The foreground colors above are designed to work in both stacks.
-// *
-// * 1. systemBackground
-// *    Use this stack for views with standard table views, and designs which have a white
-// *    primary background in light mode.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeSystemBackgroundColor                    API_UNAVAILABLE(tvos, watchos);
-//@property (class, nonatomic, readonly) UIColor *safeSecondarySystemBackgroundColor           API_UNAVAILABLE(tvos, watchos);
-//@property (class, nonatomic, readonly) UIColor *safeTertiarySystemBackgroundColor            API_UNAVAILABLE(tvos, watchos);
-//
-///* 2. systemGroupedBackground
-// *    Use this stack for views with grouped content, such as grouped tables and
-// *    platter-based designs. These are like grouped table views, but you may use these
-// *    colors in places where a table view wouldn't make sense.
-// */
-//@property (class, nonatomic, readonly) UIColor *safeSystemGroupedBackgroundColor             API_UNAVAILABLE(tvos, watchos);
-//@property (class, nonatomic, readonly) UIColor *safeSecondarySystemGroupedBackgroundColor    API_UNAVAILABLE(tvos, watchos);
-//@property (class, nonatomic, readonly) UIColor *safeTertiarySystemGroupedBackgroundColor     API_UNAVAILABLE(tvos, watchos);
-//
+#pragma mark Background colors
+
+/* We provide two design systems (also known as "stacks") for structuring an iOS app's backgrounds.
+ *
+ * Each stack has three "levels" of background colors. The first color is intended to be the
+ * main background, farthest back. Secondary and tertiary colors are layered on top
+ * of the main background, when appropriate.
+ *
+ * Inside of a discrete piece of UI, choose a stack, then use colors from that stack.
+ * We do not recommend mixing and matching background colors between stacks.
+ * The foreground colors above are designed to work in both stacks.
+ *
+ * 1. systemBackground
+ *    Use this stack for views with standard table views, and designs which have a white
+ *    primary background in light mode.
+ */
+@property (class, nonatomic, readonly) UIColor *safeSystemBackgroundColor                    API_UNAVAILABLE(tvos, watchos);
+@property (class, nonatomic, readonly) UIColor *safeSecondarySystemBackgroundColor           API_UNAVAILABLE(tvos, watchos);
+@property (class, nonatomic, readonly) UIColor *safeTertiarySystemBackgroundColor            API_UNAVAILABLE(tvos, watchos);
+
+/* 2. systemGroupedBackground
+ *    Use this stack for views with grouped content, such as grouped tables and
+ *    platter-based designs. These are like grouped table views, but you may use these
+ *    colors in places where a table view wouldn't make sense.
+ */
+@property (class, nonatomic, readonly) UIColor *safeSystemGroupedBackgroundColor             API_UNAVAILABLE(tvos, watchos);
+@property (class, nonatomic, readonly) UIColor *safeSecondarySystemGroupedBackgroundColor    API_UNAVAILABLE(tvos, watchos);
+@property (class, nonatomic, readonly) UIColor *safeTertiarySystemGroupedBackgroundColor     API_UNAVAILABLE(tvos, watchos);
+
 //#pragma mark Fill colors
 //
 ///* Fill colors for UI elements.
