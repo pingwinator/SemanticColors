@@ -47,16 +47,20 @@
                                                   @"safeQuaternarySystemFillColor": UIColor.safeQuaternarySystemFillColor,
                                                   };
     
-
+    NSMutableString *string = [NSMutableString stringWithString:@"{\n"];
     for (NSString *key in [colors.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)]) {
         if (@available(iOS 13.0, *)) {
+            [string appendFormat:@"\"%@\":\"%@\",\n", key, [colors[key] resolvedColorWithTraitCollection:self.traitCollection]];
             NSLog(@"key: %@, value: %@", key, [colors[key] resolvedColorWithTraitCollection:self.traitCollection]);
         } else {
             // Fallback on earlier versions
+            [string appendFormat:@"\"%@\":\"%@\",\n", key, colors[key]];
             NSLog(@"key: %@, value: %@", key, colors[key]);
         }
 
     }
+    [string appendString:@"}"];
+    NSLog(@"%@", string);
 
 }
 
