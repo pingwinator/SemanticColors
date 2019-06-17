@@ -24,6 +24,9 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B883FD4391626C105E642D35 /* Pods_SemanticColors_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8595DBE1CE802B3F4239D593 /* Pods_SemanticColors_Tests.framework */; };
+		FD0A099922B7AFCA003EF244 /* VLColoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A099822B7AFCA003EF244 /* VLColoursViewController.m */; };
+		FD0A099C22B7B047003EF244 /* VLColorViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A099B22B7B047003EF244 /* VLColorViewCell.m */; };
+		FD0A099F22B7B528003EF244 /* VLBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0A099E22B7B528003EF244 /* VLBorderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,12 @@
 		99B7E141879B976ECE5EE932 /* Pods-SemanticColors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SemanticColors_Example.debug.xcconfig"; path = "Target Support Files/Pods-SemanticColors_Example/Pods-SemanticColors_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E710CCE01956E1F624C62311 /* Pods-SemanticColors_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SemanticColors_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SemanticColors_Tests/Pods-SemanticColors_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2A8A292D84BB89334154CDC /* Pods-SemanticColors_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SemanticColors_Example.release.xcconfig"; path = "Target Support Files/Pods-SemanticColors_Example/Pods-SemanticColors_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FD0A099722B7AFCA003EF244 /* VLColoursViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLColoursViewController.h; sourceTree = "<group>"; };
+		FD0A099822B7AFCA003EF244 /* VLColoursViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLColoursViewController.m; sourceTree = "<group>"; };
+		FD0A099A22B7B047003EF244 /* VLColorViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLColorViewCell.h; sourceTree = "<group>"; };
+		FD0A099B22B7B047003EF244 /* VLColorViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLColorViewCell.m; sourceTree = "<group>"; };
+		FD0A099D22B7B528003EF244 /* VLBorderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLBorderView.h; sourceTree = "<group>"; };
+		FD0A099E22B7B528003EF244 /* VLBorderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLBorderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +160,12 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				FD0A099722B7AFCA003EF244 /* VLColoursViewController.h */,
+				FD0A099822B7AFCA003EF244 /* VLColoursViewController.m */,
+				FD0A099A22B7B047003EF244 /* VLColorViewCell.h */,
+				FD0A099B22B7B047003EF244 /* VLColorViewCell.m */,
+				FD0A099D22B7B528003EF244 /* VLBorderView.h */,
+				FD0A099E22B7B528003EF244 /* VLBorderView.m */,
 			);
 			name = "Example for SemanticColors";
 			path = SemanticColors;
@@ -247,6 +262,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Vasyl Liutikov";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = MYS8445P87;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -364,8 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0A099C22B7B047003EF244 /* VLColorViewCell.m in Sources */,
+				FD0A099922B7AFCA003EF244 /* VLColoursViewController.m in Sources */,
 				6003F59E195388D20070C39A /* VLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* VLViewController.m in Sources */,
+				FD0A099F22B7B528003EF244 /* VLBorderView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +515,7 @@
 			baseConfigurationReference = 99B7E141879B976ECE5EE932 /* Pods-SemanticColors_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MYS8445P87;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SemanticColors/SemanticColors-Prefix.pch";
 				INFOPLIST_FILE = "SemanticColors/SemanticColors-Info.plist";
@@ -510,6 +532,7 @@
 			baseConfigurationReference = F2A8A292D84BB89334154CDC /* Pods-SemanticColors_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MYS8445P87;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SemanticColors/SemanticColors-Prefix.pch";
 				INFOPLIST_FILE = "SemanticColors/SemanticColors-Info.plist";
